@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PhotoEdit</class>
+ <widget class="QWidget" name="PhotoEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PhotoEdit</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QGroupBox" name="EffectFir">
+   <property name="geometry">
+    <rect>
+     <x>23</x>
+     <y>15</y>
+     <width>321</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Effect-1</string>
+   </property>
+   <widget class="QRadioButton" name="Blurbtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>33</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Blur</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="Sharbtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>58</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sharpen</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="Defaultbtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>83</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Default</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="OpenFilebtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>40</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>OPEN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SaveFilebtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>70</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>SAVE</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="EffectSec">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>15</y>
+     <width>311</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Effect-2</string>
+   </property>
+   <widget class="QCheckBox" name="Graybtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>36</y>
+      <width>92</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gray</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="Invertbtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>92</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Invert</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="Exitbtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>100</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CANCEL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Origin_img">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>351</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>원  본</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Preview_img">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>220</y>
+     <width>351</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>미리보기</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>741</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>파일경로</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>741</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>저장경로</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
