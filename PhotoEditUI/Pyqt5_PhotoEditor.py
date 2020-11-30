@@ -51,6 +51,7 @@ class MyApp(QWidget, form_class):
         self.fname, _ = QFileDialog.getSaveFileName(self, 'Save Image files', './', options=QFileDialog.DontUseNativeDialog)
         self.label_2.setText('저장위치 : ' + self.fname)
         print(self.fname)
+        cv2.imwrite(self.fname, self.qimg)
         self.showDialog()
         self.loadImage()
 
