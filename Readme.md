@@ -154,7 +154,6 @@ def Save_clicked(self):
         self.fname, _ = a(self, 'Save Image files', './', options=b)
         self.label_2.setText('저장위치 : ' + self.fname)
         cv2.imwrite(self.fname, self.qimg)
-        self.showDialog(); self.loadImage()
     except:
         return 0
 ```
