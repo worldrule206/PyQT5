@@ -67,11 +67,10 @@ class MyApp(QMainWindow, form_class):
             return 0
     def Save_clicked(self):
         try:
-            a = QFileDialog.getOpenFileName; b = QFileDialog.DontUseNativeDialog
+            a = QFileDialog.getSaveFileName; b = QFileDialog.DontUseNativeDialog
             self.fname, _ = a(self, 'Save Image files', './', options=b)
             self.label_2.setText('저장위치 : ' + self.fname)
             cv2.imwrite(self.fname, self.qimg)
-            self.showDialog(); self.loadImage()
         except:
             return 0
     # <def OpenImg> 이미지읽기.
