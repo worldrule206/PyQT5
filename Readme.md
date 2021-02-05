@@ -40,7 +40,7 @@
 
 ```
 
-![Pyqt5_Main_Img](./icon_img/pqyqt5_main.png)
+![Pyqt5_Main_Img](./Redeme_img/pqyqt5_main.png)
 
 
 &nbsp;
@@ -66,7 +66,7 @@
         shar = cv2.filter2D(self.qimg, -1, sharpenImg)                   # 이미지 넘피배열만큼 필터처리
         self.qimg = shar                                                 # 가공된 이미지 다음편집단계를 위해 저장.                                 
 ```
-![Pyqt5_Sharpen_Img](./icon_img/pqyqt5_Sharpen.png)
+![Pyqt5_Sharpen_Img](./Redeme_img/pqyqt5_Sharpen.png)
 
 &nbsp;
 ### 1.2.4 GrayScale
@@ -80,7 +80,7 @@ def EditImgSecond(self):
         #입력된이미지(3채널) -> 그레이스케일변환(1채널) -> Qt포멧을위한변환(3채널)
         self.qimg = dst
 ```
-![Pyqt5_GrayScale_Img](./icon_img/pqyqt5_GrayScale.png)
+![Pyqt5_GrayScale_Img](./Redeme_img/pqyqt5_GrayScale.png)
 
 &nbsp;
 ### 1.2.5 Invert
@@ -92,7 +92,7 @@ def EditImgFirst(self):
         self.qimg = cv2.bitwise_not(src) #입력된 이미지 역상처리 후 self.qimg 반환
         
 ```
-![Pyqt5_Invert_Img](./Readme_img/pqyqt5_Invert.png)
+![Pyqt5_Invert_Img](./Redeme_img/pqyqt5_Invert.png)
 
 &nbsp;
 ### 1.2.6 Rotate
@@ -104,7 +104,7 @@ def EditImgFirst(self):
         matrix = cv2.getRotationMatrix2D((self.w/2, self.h/2), r, 1)    #중간값, 볼륨값, 1채널 의 매트릭스 생성
         self.qimg = cv2.warpAffine(self.qimg, matrix, (self.w, self.h)) #생성된 매트릭스를 적용, 이미지 위치변경.
 ```
-![Pyqt5_Rotate_Img](./icon_img/pqyqt5_Rotate.png)
+![Pyqt5_Rotate_Img](./Redeme_img/pqyqt5_Rotate.png)
 
 
 &nbsp;
@@ -132,7 +132,7 @@ def EditImgFirst(self):
     cv2.imshow('Image Crop', capimg); cv2.imwrite(cropsave, capimg); cv2.waitKey(); cv2.destroyAllWindows()
     print("사진 자르기 완료")
 ```
-![Pyqt5_Screenshot_Img](./icon_img/pqyqt5_Screenshot.png)
+![Pyqt5_Screenshot_Img](./Redeme_img/pqyqt5_Screenshot.png)
 
 &nbsp;
 ### 1.2.8 Open & Save
@@ -157,5 +157,5 @@ def Save_clicked(self):
     except:
         return 0
 ```
-![Pyqt5_OS_Img](./icon_img/pqyqt5_OS.png)
+![Pyqt5_OS_Img](./Redeme_img/pqyqt5_OS.png)
 
